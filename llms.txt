@@ -71,7 +71,7 @@ Everything in Free, plus:
 - Split transactions across multiple budget categories
 - Runway Cash Flow Planning: Living Money metric, $/Day daily budget, payday-to-payday periods, auto-populate from income/bills/budgets, actual vs planned comparison, trend charts, credit card log
 - Advanced financial reports: income statements, balance sheets, cash flow statements, tax summaries
-- Accounting Dashboard with financial health indicators
+- Accounting Dashboard with financial health indicators and Money Flow Sankey chart (visualizes how income sources flow into expense categories)
 - Export to Excel and PDF
 - Email support (1-2 business day response)
 - Promo code WELCOME20 saves 20% first year ($31.20)
