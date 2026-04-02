@@ -342,7 +342,7 @@
             color: var(--secondary-color);
         }
 
-        /* Mac Coming Soon */
+        /* Mac Download Styles */
         .coming-soon-badge {
             display: inline-flex;
             align-items: center;
@@ -726,7 +726,7 @@
 
                 <!-- Mac Panel — populated by JS when MAC_LIVE=true -->
                 <div class="platform-panel" id="panel-mac">
-                    <a href="#" class="btn-download" onclick="trackDownload('mac', '2.5.4')">
+                    <a href="https://senticmoney.com/senticmoney-download/SenticMoney-v2.5.4-mac.dmg" class="btn-download" onclick="trackDownload('mac', '2.5.4')">
                         <i class="fab fa-apple"></i> Download for Mac
                     </a>
 
@@ -736,12 +736,16 @@
                         <span>Apple Silicon &amp; Intel</span>
                     </div>
 
+                    <a href="/resources/senticmoney-quick-start.pdf" class="quick-start-link" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Download Quick Start Guide (PDF)
+                    </a>
+
                     <div class="also-available">
                         Also available: <a href="#" onclick="showPlatform('windows'); return false;">Windows version</a>
                     </div>
                 </div>
 
-                <div class="download-info-box">
+                <div class="download-info-box platform-info-windows">
                     <div class="info-item">
                         <i class="fas fa-desktop"></i>
                         <span>Windows 10/11</span>
@@ -749,6 +753,24 @@
                     <div class="info-item">
                         <i class="fas fa-hdd"></i>
                         <span>~93 MB</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>2-3 min install</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Local</span>
+                    </div>
+                </div>
+                <div class="download-info-box platform-info-mac" style="display:none;">
+                    <div class="info-item">
+                        <i class="fab fa-apple"></i>
+                        <span>macOS 12+ (Monterey)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-hdd"></i>
+                        <span>~120 MB</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
@@ -773,7 +795,7 @@
             <!-- What Happens Next Section -->
             <div class="what-happens-next">
                 <h2><i class="fas fa-route"></i> What Happens After Download?</h2>
-                <div class="steps-timeline">
+                <div class="steps-timeline steps-windows">
                     <div class="timeline-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
@@ -793,6 +815,43 @@
                         <div class="step-content">
                             <h3>Launch SenticMoney</h3>
                             <p>Open SenticMoney from your Start Menu or desktop shortcut. Your browser will open to <code>http://localhost:5007</code>.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Login &amp; Explore</h3>
+                            <p>Use these credentials: <strong>demo / demo123</strong>. You'll see a few pre-loaded transactions to explore all features.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Start Fresh or Keep Demo Data</h3>
+                            <p>Create your own account or continue with the demo. Your data stays on your computer—completely private.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-timeline steps-mac" style="display:none;">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Open the DMG</h3>
+                            <p>Double-click the downloaded <code>SenticMoney-v2.5.4-mac.dmg</code> file to mount the disk image.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Drag to Applications</h3>
+                            <p>Drag the SenticMoney icon into the Applications folder shortcut in the DMG window.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Launch SenticMoney</h3>
+                            <p>Open SenticMoney from your Applications folder or Spotlight. If macOS Gatekeeper prompts you, go to System Settings → Privacy &amp; Security and click "Open Anyway".</p>
                         </div>
                     </div>
                     <div class="timeline-step">
@@ -938,6 +997,10 @@
             document.querySelectorAll('.platform-panel').forEach(function(p) { p.classList.remove('active'); });
             document.getElementById('tab-' + platform).classList.add('active');
             document.getElementById('panel-' + platform).classList.add('active');
+            document.querySelector('.platform-info-windows').style.display = (platform === 'windows') ? '' : 'none';
+            document.querySelector('.platform-info-mac').style.display = (platform === 'mac') ? '' : 'none';
+            document.querySelector('.steps-windows').style.display = (platform === 'windows') ? '' : 'none';
+            document.querySelector('.steps-mac').style.display = (platform === 'mac') ? '' : 'none';
         }
 
         // Auto-detect OS and show the right tab first
