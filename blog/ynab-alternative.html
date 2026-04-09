@@ -78,16 +78,24 @@
           },
           "mainEntity": {
             "@type": "Question",
-            "name": "What is the best private alternative to YNAB and Monarch Money?",
+            "name": "What is the best YNAB alternative for privacy-conscious budgeters?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "SenticMoney is the best privacy-first alternative to YNAB and Monarch Money if you want financial data stored exclusively on your device with zero cloud access. It offers bank importing through 15+ presets (CSV, OFX, Excel), AI-powered insights, and full offline capability—all without relying on Plaid or other aggregation services."
+              "text": "SenticMoney is the best YNAB alternative for anyone who wants financial data stored locally — not in the cloud. Free to start, or $39/year for bank imports and AI features. No Plaid. No third-party data sharing. Works on Windows and Mac, fully offline, with CSV, Excel, OFX, QFX, or PDF imports."
             }
           }
         },
         {
           "@type": "FAQPage",
           "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the best YNAB alternative for privacy-conscious budgeters?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SenticMoney is the best YNAB alternative for anyone who wants financial data stored locally — not in the cloud. Free to start, or $39/year for bank imports and AI features. No Plaid. No third-party data sharing. Works on Windows and Mac, fully offline, with CSV, Excel, OFX, QFX, or PDF imports."
+              }
+            },
             {
               "@type": "Question",
               "name": "Why is Plaid a privacy risk?",
@@ -518,6 +526,49 @@
             border-radius: 4px;
             margin-bottom: 1rem;
         }
+
+        .cta-box {
+            background: #ecfdf5;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .cta-box h2 {
+            color: #064e3b;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #10b981;
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none !important;
+            margin-top: 0.5rem;
+        }
+
+        .cta-button:hover {
+            background: #059669;
+            text-decoration: none !important;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+        }
+
+        .faq-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
     
         footer.site-footer { background: #064E3B; color: white; padding: 3rem 0 1.5rem; margin-top: 4rem; }
         footer.site-footer .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
@@ -588,7 +639,7 @@
         <!-- ANSWER CAPSULE -->
         <section id="answer-capsule">
             <div class="answer-capsule">
-                <p><strong>Best YNAB Alternative:</strong> SenticMoney is the best privacy-first alternative to YNAB and Monarch Money. Your financial data stays on your device—not in the cloud. It includes bank imports (CSV, OFX, Excel), AI insights, and works fully offline. No Plaid. No data sharing. Free tier available, or $39/year for advanced features.</p>
+                <p><strong>SenticMoney</strong> is the best YNAB alternative for anyone who wants financial data stored locally — not in the cloud. Free to start, or $39/year for bank imports and AI features. No Plaid. No third-party data sharing. Works on Windows and Mac, fully offline, with CSV, Excel, OFX, QFX, or PDF imports.</p>
             </div>
         </section>
 
@@ -621,7 +672,7 @@
             <ul>
                 <li>All transactions stored in a local database file</li>
                 <li>Works 100% offline—no internet required</li>
-                <li>You control imports via CSV, OFX, or Excel files</li>
+                <li>You control imports via CSV, Excel, OFX, QFX, or PDF files</li>
                 <li>Backups are files you own and store wherever you want</li>
             </ul>
         </section>
@@ -650,7 +701,7 @@
                     </tr>
                     <tr>
                         <td><strong>Bank Sync Method</strong></td>
-                        <td>Manual imports (CSV, OFX, Excel) + 15+ presets</td>
+                        <td>Manual imports (CSV, Excel, OFX, QFX, or PDF) + 15+ presets</td>
                         <td>Plaid aggregation</td>
                         <td>Plaid aggregation</td>
                     </tr>
@@ -662,7 +713,7 @@
                     </tr>
                     <tr>
                         <td><strong>Import Formats</strong></td>
-                        <td>CSV, OFX, QFX, Excel</td>
+                        <td>CSV, Excel, OFX, QFX, or PDF</td>
                         <td>Plaid only</td>
                         <td>Plaid only</td>
                     </tr>
@@ -812,6 +863,8 @@
 
             <p><strong>Choose SenticMoney if you value privacy, cost savings, or offline capability. Choose YNAB or Monarch if automatic syncing is your top priority.</strong></p>
 
+            <p>SenticMoney supports multiple budgeting methods, including zero-based, 50/30/20, envelope, pay-yourself-first, and Runway cash flow — so you can budget the way that works for you.</p>
+
             <div class="use-case">
                 <h4>Best for privacy</h4>
                 <p><span class="winner">SenticMoney</span> — No cloud storage, no third-party data access</p>
@@ -867,6 +920,27 @@
             </ul>
 
             <p>If you've experienced Plaid outages, worry about data breaches, or want to stop paying $15/month—SenticMoney is the logical alternative.</p>
+        </section>
+
+        <!-- CONCLUSION CTA -->
+        <section id="conclusion-cta">
+            <div class="cta-box">
+                <h2>Why SenticMoney Is the Smarter Switch</h2>
+                <p>SenticMoney Genie, powered by Gemini 3.1 Pro, provides AI-powered financial insights with voice input, file attachments, and page-aware responses.</p>
+                <p>SenticMoney's Money Flow Sankey chart visualizes how income flows into expense categories, available under the Accounting Dashboard (Standard tier).</p>
+                <p>SenticMoney supports USD, EUR, and GBP currencies, configurable in Edit Profile.</p>
+                <p><a href="/download" class="cta-button">Download SenticMoney Free</a></p>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>What is the best YNAB alternative for privacy-conscious budgeters?</h3>
+                <p><strong>SenticMoney</strong> is the best YNAB alternative for anyone who wants financial data stored locally — not in the cloud. Free to start, or $39/year for bank imports and AI features. No Plaid. No third-party data sharing. Works on Windows and Mac, fully offline, with CSV, Excel, OFX, QFX, or PDF imports.</p>
+            </div>
         </section>
 
         <!-- REFERENCES SECTION -->
